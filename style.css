@@ -1,0 +1,80 @@
+body {
+	background-image: url("images/zergwp.jpg");
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	width: 99%;
+}
+
+h1 {
+	text-align: center;
+	text-shadow: 5px 5px 3px rgb(134,212,251);
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 80%;
+}
+
+article{
+	text-align: justify;
+}
+
+.legende {
+	clear: both;
+	text-align: right;
+	font-size: 0.9em;
+}
+
+.legend {
+	padding-left : 15px;
+}
+
+.dessous {
+	clear: both;
+}
+
+#bandeau {
+	float : top;
+	margin-left: -100px;
+}
+
+#persos {
+	float: right;
+	margin-right: -168px;
+	margin-top: 58px;
+}
+
+#tracer{
+	float: right;
+	margin-right: -160px;
+}
+
+#logo {
+	float: left;
+	margin-left: -100px;
+}
+
+#avatar {
+	float: left;
+	margin-left: -150px;
+}
+
+#cassie {
+	float : right;
+	margin-top: 25px;
+}
+
+#thorn {
+	float: left;
+}
+
+@media screen and (max-width: 1400px){
+    #bandeau{
+      display: none;
+    }
+}
+@media screen and (max-width: 990px){
+  #logo, #avatar, #cassie, #thorn, .legende, .legend{
+    display: none;
+  }
+}
