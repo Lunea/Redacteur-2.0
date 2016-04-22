@@ -38,9 +38,9 @@
 								<li class="active"> <a href="Article.html">Article</a> </li>
 							</ul>
 						
-							<form class="navbar-form navbar-right inline-form" action="https://www.google.fr/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8+">
+							<form class="navbar-form navbar-right inline-form" action="" id="searchForm">
 								<div class="form-group">
-									<input type="search" class="input-sm form-control" placeholder="Recherche">
+									<input type="search" class="input-sm form-control" placeholder="Recherche" id="searchField">
 									<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> Chercher</button>
 								</div>
 							</form>
@@ -115,8 +115,13 @@
 			</footer>
 			</div>
 		</div>	
-	<script src="js/jquery.js"></script>
-    <script src="mon-script.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+	    <script src="mon-script.js"></script>
+	    <script type="text/javascript">
+	    	$('#searchField').keyup(function() {
+				$("#searchForm").attr('action', "http://www.google.fr#safe=off&q=" + $(this).val());
+	    	})
+	    </script>
 	</body>
 </html>
 							
