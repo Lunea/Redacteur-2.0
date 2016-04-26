@@ -89,7 +89,7 @@ article{
     }
 }
 @media screen and (max-width: 990px){
-  #logo, #avatar, #cassie, #thorn, .legende, .legend{
+  #logo, #avatar, #cassie, #thorn, #nains, #vs, .legende, .legend{
     display: none;
   }
 }
