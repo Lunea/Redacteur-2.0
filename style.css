@@ -27,10 +27,16 @@ article{
 
 .legend {
 	padding-left : 15px;
+	font-size: 0.9em;
+	text-align: center;
 }
 
 .dessous {
 	clear: both;
+}
+
+.sign {
+	text-align: right;
 }
 
 #bandeau {
@@ -68,6 +74,15 @@ article{
 	float: left;
 }
 
+#vs {
+	float: right;
+	width: 90%; 
+}
+
+#nains{
+	float: left; 
+	width: 99%
+}
 @media screen and (max-width: 1400px){
     #bandeau{
       display: none;
